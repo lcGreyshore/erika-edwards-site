@@ -1,9 +1,12 @@
 .page-section {
-  padding: 100px 0;
-  :nth-child(0) {
-    background: lightyellow;
-  }
+  padding: 25px 0;
 }
+
+#Books,
+#Libros {
+  padding: 0;
+}
+
 @media (min-width: 768px) {
   .page-section {
     padding: 150px 0;
