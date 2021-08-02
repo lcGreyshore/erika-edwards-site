@@ -1,17 +1,30 @@
-// Styling for the timeline section
-.timeline {
-  position: relative;
-  padding: 0;
-  list-style: none;
-  &:before {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 40px;
-    width: 2px;
-    margin-left: -1.5px;
-    content: "";
-    background-color: $gray-200;
+.bio-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .bio-cover {
+    width: 100vw;
+  }
+
+  .right-section {
+    padding: 1rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .bio-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .bio-cover {
+      width: 25vw;
+    }
+
+    .right-section {
+      padding: 2rem 0 2rem 3rem;
+      text-align: left;
+    }
   }
 }
 @media (min-width: 768px) {

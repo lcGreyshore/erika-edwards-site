@@ -34,10 +34,7 @@ export const query = graphql`
         frontmatter {
           brand
           anchor
-          clients {
-            href
-            imageFileName
-          }
+          
           content
           copyright
           header
@@ -52,6 +49,7 @@ export const query = graphql`
             header
             subheader
             imageFileNameDetail
+            ariaLabel
             imageFileName
           }
           privacyHref
@@ -60,6 +58,7 @@ export const query = graphql`
             content
             header
             iconName
+            purchaseText
             imageFileName
           }
           social {
@@ -88,8 +87,8 @@ export const query = graphql`
           title
           timeline {
             content
+            content2
             header
-            imageContent
             imageFileName
             subheader
           }

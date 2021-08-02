@@ -1,8 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import PropTypes from "prop-types";
 
 import { Modal, Button } from "react-bootstrap";
 import Image from "components/Image";
+import ModalVideo from 'react-modal-video'
 import Icon from "./Icon";
 
 const PortfolioDetailDialog = ({
@@ -15,6 +16,7 @@ const PortfolioDetailDialog = ({
   extraInfo,
   ...restProps
 }) => {
+  const [isOpen, setOpen] = useState(false);
   return (
     <Modal
       {...restProps}
@@ -28,11 +30,13 @@ const PortfolioDetailDialog = ({
       </Modal.Header>
       <Modal.Body className="mx-auto">
         <p className="item-intro text-muted">{subheader}</p>
-        <Image
+        <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="L61p2uyiMSo" onClose={() => setOpen(false)} />
+        <button type="button" className="btn-primary" onClick={()=> setOpen(true)}>VIEW DEMO</button>
+        {/* <Image
           className="img-fluid d-block"
           fileName={imageFileName}
           alt={imageAlt || header || subheader}
-        />
+        /> */}
         <p>{content}</p>
         {extraInfo}
       </Modal.Body>

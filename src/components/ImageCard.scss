@@ -7,33 +7,40 @@
     padding: 0;
   }
   .intro-text {
-    padding-top: 150px;
-    padding-bottom: 100px;
-    .intro-lead-in {
-      font-size: 22px;
-      font-style: italic;
-      line-height: 22px;
-      margin-bottom: 25px;
-      @include serif-font;
-    }
-    .intro-heading {
-      font-size: 50px;
-      font-weight: 700;
-      line-height: 50px;
-      margin-bottom: 25px;
-      @include heading-font;
+    padding-top: 300px;
+    // padding-bottom: 100px;
+    .intro-text-wrapper {
+      background: rgba(33, 37, 41, 0.8);
+      border-radius: 25px;
+      width: 100%;
+      padding: 1rem 0;
+      .intro-lead-in {
+        font-size: 18px;
+        font-style: italic;
+        line-height: 18px;
+        margin-bottom: 10px;
+        @include serif-font;
+      }
+      .intro-heading {
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 50px;
+        // margin-bottom: 25px;
+        @include heading-font;
+      }
     }
   }
 }
 @media (min-width: 768px) {
   .image-card {
-    height: 759px;
+    height: 769px;
     .image {
-      height: 759px;
+      height: 769px;
     }
     .intro-text {
-      padding-top: 300px;
-      padding-bottom: 200px;
+      width: 30vw;
+      // padding-top: 300px;
+      // padding-bottom: 200px;
       .intro-lead-in {
         font-size: 40px;
         font-style: italic;

@@ -4,31 +4,11 @@ header: "About"
 subheader: "Lorem ipsum dolor sit amet consectetur."
 timeline: [
   {
-    imageFileName: "about/1.jpg",
-    header: "2009-2011",
-    subheader: "Our Humble Beginnings",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-  },
-  {
-    imageFileName: "about/2.jpg",
-    header: "March 2011",
-    subheader: "An Agency is Born",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-  },
-  {
-    imageFileName: "about/3.jpg",
-    header: "December 2012",
-    subheader: "Transition to Full Service",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-  },
-  {
-    imageFileName: "about/4.jpg",
-    header: "July 2014",
-    subheader: "Phase Two Expansion",
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-  },
-  {
-    imageContent: "Be Part\r\nOf Our\r\nStory!"
+    imageFileName: "Dr. Erika Denise Edwards spent her formative years in the Upper Peninsula of Michigan. She and her twin sister, Lydia Edwards (Boston City Councilor)  were raised by her divorced mother, an Air Force veteran.(Debates still range on whether they are identical twins, but clearly they were 'identical' enough because she dressed up like Lydia during her campaign for city council  so 'Lydia' was able to be in two places at once.)  ",
+    header: "About Dr. Erika Edwards",
+    subheader: "After graduating from high school she moved downstate to live among the trolls (a nickname we 'yoopers,' those from the Upper Peninsula, give people who live under the bridge) and attended Grand Valley State University.  She majored in history and minored in Spanish.  While attending college she taught ESL to migrants from Mexico and Central America.  Inspired to improve her Spanish  she studied abroad in Argentina 2002. At the time it was the best six months of her life. With one question, 'what happened to the black people?' and not finding any satisfactory answers she returned to the United States ready to pursue graduate school, but not just yet.  She decided to study abroad again, this time choosing Guayaquil, Ecuador where she volunteered at an orphanage for girls. That experience further helped her formulate what it meant to be a part of the African diaspora.",
+    content: "Upon her return she joined the McNair program, and continued to study and research Argentina's black history for two summers. After she graduated from Grand Valley State University she enrolled in Florida International University's Atlantic History Doctoral program. In order to support her research she was awarded a Fulbright and Ford Dissertation Fellowship. She graduated in 2011 and began working at UNC-Charlotte's Africana Studies Department as a Lecturer and the following year obtained a tenure track position in the History Department where she was recently tenured.",
+    content2: "Dr. Edwards has published Hiding in Plain Sight: Black Women, the Law, and the Making of White Argentine Republic. This book is a gendered analysis of black erasure in Argentina.  It has won the Association of Black Women Historians's 2020 Letitia Woods Brown Memorial Book Prize and named one of the best Black History books of 2020 by the African American Intellectual History Society. Her research advocates for a re-learning of Argentina's black past and the origins of anti-blackness.  Her advocacy extends to the Charlotte community. She currently serves on  the Board of Directors for Latin Americans Working for Achievement, a non-profit organization that grants scholarships to Latinx youth from the Charlotte Region. "
   }
 ]
 ---

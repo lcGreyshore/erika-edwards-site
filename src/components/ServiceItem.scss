@@ -8,3 +8,42 @@
   margin: 15px 0;
   text-transform: none;
 }
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.book-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .book-cover {
+    width: 100vw;
+  }
+
+  .right-section {
+    padding: 1rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .book-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .book-cover {
+      width: 25vw;
+    }
+
+    .right-section {
+      padding: 2rem 0 2rem 3rem;
+      text-align: left;
+    }
+  }
+}

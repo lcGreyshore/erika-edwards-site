@@ -10,7 +10,7 @@ const Contact = ({ className, frontmatter }) => {
     return null;
   }
 
-  const { anchor, header, subheader, telephone, email } = frontmatter;
+  const { anchor, header, subheader, email } = frontmatter;
 
   return (
     <PageSection className={className} id={anchor}>
@@ -18,17 +18,17 @@ const Contact = ({ className, frontmatter }) => {
         <Col lg={8} className="text-center">
           <h2 className="mt-0">{header}</h2>
           <hr className="divider my-4" />
-          <p className="text-muted mb-5">{subheader}</p>
+          <p className="mb-5">{subheader}</p>
         </Col>
       </Row>
       <Row>
-        <Col lg={4} className="ml-auto text-center">
+        {/* <Col lg={4} className="ml-auto text-center">
           <Icon iconName="PhoneIcon" size="3x" className="text-muted mb-3" />
           <a className="d-block" href={`tel:${telephone}`}>
             {telephone}
           </a>
-        </Col>
-        <Col lg={4} className="mr-auto text-center">
+        </Col> */}
+        <Col lg={12} className="mr-auto text-center">
           <Icon iconName="EnvelopIcon" size="3x" className="text-muted mb-3" />
           <a className="d-block" href={`mailto:${email}`}>
             {email}

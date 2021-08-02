@@ -1,5 +1,6 @@
 // bootstrap
 @import "~bootstrap/scss/bootstrap";
+@import "node_modules/react-modal-video/scss/modal-video.scss";
 
 /* Global styling for this template */
 body {
@@ -69,11 +70,29 @@ img::-moz-selection {
   &:focus,
   &:hover {
     background-color: darken($primary, 7.5%) !important;
-    border-color: darken($primary, 7.5%) !important;
+    outline: 5px auto -webkit-focus-ring-color !important;
     color: white;
   }
   &:active,
   &:focus {
-    box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+    box-shadow: blue !important;
+  }
+}
+
+// .gatsby-image-wrapper.image {
+//   width: 60% !important;
+//   justify-content: right;
+// }
+
+.navbar-root.navbar.navbar-expand-lg.navbar-light.fixed-top {
+  background-color: #212529;
+}
+
+#Contact,
+#Contacta {
+  background-color: #900c3f !important;
+  color: $white;
+  a {
+    color: white;
   }
 }

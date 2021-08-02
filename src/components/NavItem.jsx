@@ -1,12 +1,19 @@
-import React from "react";
+import React, {useEffect} from "react";
 import PropTypes from "prop-types";
 
 import { Nav } from "react-bootstrap";
-import { Link } from "react-scroll";
+import { Events, Link } from "react-scroll";
 
 import "./NavItem.scss";
 
 const NavItem = ({ to, onClick, children }) => {
+  useEffect(() => {
+    // After scrolling to target section, try to send focus to first interactive
+    // element (happens to be a <summary> in this app)
+    Events.scrollEvent.register("end", (_to, element) => {
+      element?.querySelector("summary")?.focus();
+    });
+  }, []);
   return (
     <Nav.Item>
       <Link

@@ -1,43 +1,42 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import CircleFAButton from "components/CircleFAButton";
-import Image from "components/Image";
 import "./ServiceItem.scss";
+import bookCover from "content/assets/images/services/Hiding.jpeg"
 
-const ServiceItem = ({ iconName, imageFileName, header, content }) => {
-  let iconPart;
-  if (iconName) {
-    iconPart = <CircleFAButton iconName={iconName} />;
-  }
-
-  let imagePart;
-  if (imageFileName) {
-    imagePart = <Image className="service-item-image" fileName={imageFileName} />;
-  }
+const ServiceItem = ({ header, content, iconName, purchaseText }) => {
+  
 
   return (
     <>
-      {iconPart}
-      {imagePart}
-      <h4 className="service-item-heading">{header}</h4>
-      <p className="text-muted">{content}</p>
+     <div className="book-container">
+          <div className="left-section">
+            <img src={bookCover} alt={header} className="book-cover" />
+          </div>
+          <div className="right-section">
+            <h2>{header}</h2>
+            <hr/>
+            <p>{content}</p>
+            <p>{iconName}</p>
+            <a className="btn btn-primary btn-xl text-uppercase" href="https://www.scuppernongbooks.com/book/9780817360313">{purchaseText}</a>  
+          </div>
+        </div>
     </>
   );
 };
 
 ServiceItem.propTypes = {
-  iconName: PropTypes.string,
-  imageFileName: PropTypes.string,
   header: PropTypes.string,
   content: PropTypes.string,
+  iconName: PropTypes.string,
+  purchaseText: PropTypes.string,
 };
 
 ServiceItem.defaultProps = {
-  iconName: null,
-  imageFileName: null,
   header: "",
   content: "",
+  iconName: "",
+  purchaseText: "",
 };
 
 export default ServiceItem;

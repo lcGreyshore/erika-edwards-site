@@ -1,14 +1,10 @@
 import React from "react";
-import PropTypes from "prop-types";
 
 import CircleIcon from "components/CircleIcon";
 
-const Linkedin = ({ userName }) => (
-  <CircleIcon href={`https://linkedin.com/in/${userName}`} iconName="LinkedinIcon" />
+const Linkedin = () => (
+  <CircleIcon href="https://www.linkedin.com/in/erika-edwards-b0203617/" iconName="LinkedinIcon" />
 );
 
-Linkedin.propTypes = {
-  userName: PropTypes.string.isRequired,
-};
 
 export default Linkedin;

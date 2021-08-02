@@ -1,6 +1,16 @@
 // Styling for the portfolio section
-.portfolio-section {
-  * {
-    z-index: 2;
+.portfolio-item {
+  .img-fluid {
+    height: 220px;
+  }
+  .portfolio-caption {
+    height: 175px;
+    .caption-block {
+      height: 94px;
+    }
+  }
+
+  .portfolio-caption > p {
+    padding: 0.2rem 0;
   }
 }

@@ -37,7 +37,7 @@ const TimelineItem = ({
           {subheaderPart}
         </div>
         <div className="timeline-body">
-          <p className="text-muted">{content}</p>
+          <p>{content}</p>
         </div>
       </div>
     </li>

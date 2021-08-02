@@ -1,4 +1,4 @@
 ---
-brand: "Start Bootstrap"
+brand: "Erika Denise Edwards, PhD"
 menuText: "Menu "
 ---

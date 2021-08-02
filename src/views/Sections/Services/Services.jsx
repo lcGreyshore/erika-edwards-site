@@ -1,11 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { Row, Col } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 
 import ServiceItem from "components/ServiceItem";
 import SectionHeader from "components/SectionHeader";
 import PageSection from "components/PageSection";
+import './services.scss';
 
 const Services = ({ className, frontmatter }) => {
   if (!frontmatter) {
@@ -17,15 +18,16 @@ const Services = ({ className, frontmatter }) => {
   return (
     <PageSection className={className} id={anchor}>
       <Row>
-        <SectionHeader header={rootHeader} subheader={rootSubHeader} />
+        <SectionHeader className="sr-only" header={rootHeader} subheader={rootSubHeader} />
       </Row>
       <Row className="text-center">
         {services.map((service) => (
-          <Col md={4} key={service.header}>
+          <div key={service}>
             <ServiceItem {...service} />
-          </Col>
+          </div>
         ))}
       </Row>
+      <Row className="purchase-btn" />
     </PageSection>
   );
 };

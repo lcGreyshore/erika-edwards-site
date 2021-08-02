@@ -1,11 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { Row, Col } from "react-bootstrap";
-import TimelineItem from "components/TimelineItem";
+import { Row } from "react-bootstrap";
 import SectionHeader from "components/SectionHeader";
 import PageSection from "components/PageSection";
-import nl2br from "utils/nl2br";
+import bioPhoto from "content/assets/images/about/erika.jpg";
 
 import "./About.scss";
 
@@ -22,7 +21,22 @@ const About = ({ className, frontmatter }) => {
         <SectionHeader header={rootHeader} subheader={rootSubHeader} />
       </Row>
       <Row>
-        <Col lg={12}>
+      <div className="bio-container">
+          <div className="left-section">
+            <img src={bioPhoto} alt="" className="bio-cover" />
+          </div>
+          <div className="right-section">
+          {timeline.map(({ content, content2, header, imageFileName, subheader }, ind) => (
+            <div key={header}>
+            <p>{imageFileName}</p>
+            <p>{subheader}</p>
+            <p>{content}</p>
+            <p>{content2}</p>
+            </div>
+            ))}
+          </div>
+        </div>
+        {/* <Col lg={12}>
           <ul className="timeline">
             {timeline.map(({ content, header, imageContent, imageFileName, subheader }, ind) => (
               <TimelineItem
@@ -40,7 +54,7 @@ const About = ({ className, frontmatter }) => {
               />
             ))}
           </ul>
-        </Col>
+        </Col> */}
       </Row>
     </PageSection>
   );

@@ -1,7 +1,7 @@
 ---
 anchor: "Contact"
-header: "Let's Get In Touch!"
-subheader: "Ready to start your next project with us? Give us a call or send us an email and we will get back to you as soon as possible!"
+header: "Contact Dr. Erika Denise Edwards"
+subheader: "To contact Dr. Edwards please email her at the address provided below."
 telephone: 03-0000-0001
-email: contact@yourwebsite.com
+email: eedwar27@uncc.edu
 ---
