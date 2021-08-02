@@ -3,8 +3,6 @@ import PropTypes from "prop-types";
 
 import { Col } from "react-bootstrap";
 import Image from "components/Image";
-import Icon from "components/Icon";
-import PortfolioDetailDialog from "components/PortfolioDetailDialog";
 import ModalVideo from 'react-modal-video'
 
 import "./PortfolioItem.scss";
@@ -16,9 +14,8 @@ const PortfolioItem = ({
   subheader,
   content,
   imageFileNameDetail,
-  imageAltDetail,
   ariaLabel,
-  extraInfo,
+
 }) => {
   const [isOpen, setOpen] = useState(false);
 
@@ -51,9 +48,7 @@ PortfolioItem.propTypes = {
   subheader: PropTypes.string,
   content: PropTypes.string,
   imageFileNameDetail: PropTypes.string,
-  imageAltDetail: PropTypes.string,
   ariaLabel: PropTypes.string,
-  extraInfo: PropTypes.any,
 };
 
 PortfolioItem.defaultProps = {
@@ -61,9 +56,7 @@ PortfolioItem.defaultProps = {
   subheader: "",
   content: "",
   imageFileNameDetail: "",
-  imageAltDetail: "",
   ariaLabel: "",
-  extraInfo: null,
 };
 
 export default PortfolioItem;

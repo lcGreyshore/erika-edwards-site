@@ -6,12 +6,18 @@ import { Row } from "react-bootstrap";
 import SectionHeader from "components/SectionHeader";
 import PortfolioItem from "components/PortfolioItem";
 import PageSection from "components/PageSection";
+import loadable from '@loadable/component';
 import "./Portfolio.scss";
+
+const VideoComponent = loadable(() => import('components/PortfolioItem'))
+
+
+
 
 const Portfolio = ({ className, frontmatter }) => {
   if (!frontmatter) {
     return null;
-  }
+  }    
 
   const { anchor, header: rootHeader, subheader: rootSubHeader, portfolios } = frontmatter;
 
@@ -23,7 +29,7 @@ const Portfolio = ({ className, frontmatter }) => {
       <Row>
         {portfolios.map(
           ({ content, extraInfo, header, imageFileName, imageFileNameDetail, ariaLabel, subheader }) => (
-            <PortfolioItem
+            <VideoComponent
               key={header}
               imageFileName={imageFileName}
               header={header}
