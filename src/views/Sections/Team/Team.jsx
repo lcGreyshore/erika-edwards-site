@@ -34,7 +34,7 @@
 //       </Row>
 //       <Row>
 //         <Col lg={8} className="mx-auto text-center">
-//           <p className="large text-muted">{rootContent}</p>
+//           <p className="large">{rootContent}</p>
 //         </Col>
 //       </Row>
 //     </PageSection>

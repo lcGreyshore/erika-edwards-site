@@ -16,7 +16,7 @@ const Contact = ({ className, frontmatter }) => {
     <PageSection className={className} id={anchor}>
       <Row className="justify-content-center">
         <Col lg={8} className="text-center">
-          <h2 className="mt-0">{header}</h2>
+          <h3 className="mt-0">{header}</h3>
           <hr className="divider my-4" />
           <p className="mb-5">{subheader}</p>
         </Col>

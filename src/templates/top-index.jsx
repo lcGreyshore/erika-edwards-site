@@ -128,6 +128,7 @@ const IndexPage = ({ data, pageContext: { langKey, defaultLang, langTextMap } })
         extraItems={langSelectorPart}
       />
       <Top frontmatter={topNode.frontmatter} />
+      <main>
       {
         // dynamically import sections
         sectionsNodes.map(({ frontmatter, fields: { fileName } }, ind) => {
@@ -143,6 +144,7 @@ const IndexPage = ({ data, pageContext: { langKey, defaultLang, langTextMap } })
           ) : null;
         })
       }
+      </main>
       <Footer frontmatter={footerNode.frontmatter} />
     </>
   );

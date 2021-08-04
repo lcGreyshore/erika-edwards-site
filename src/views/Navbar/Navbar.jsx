@@ -54,7 +54,7 @@ const MyNavbar = ({ anchors, frontmatter, extraItems }) => {
         <Navbar.Collapse>
           <Nav className="text-uppercase ml-auto">
             {anchors.map((anchor) => (
-              <NavItem key={anchor} to={anchor} onClick={closeMenu} />
+              <NavItem aria-describedby={anchor} as="button" key={anchor} to={anchor} onClick={closeMenu} />
             ))}
           </Nav>
           {extraItems}

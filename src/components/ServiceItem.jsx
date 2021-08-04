@@ -14,7 +14,7 @@ const ServiceItem = ({ header, content, iconName, purchaseText }) => {
             <img src={bookCover} alt={header} className="book-cover" />
           </div>
           <div className="right-section">
-            <h2>{header}</h2>
+            <h3>{header}</h3>
             <hr/>
             <p>{content}</p>
             <p>{iconName}</p>

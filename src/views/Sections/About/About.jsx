@@ -36,25 +36,6 @@ const About = ({ className, frontmatter }) => {
             ))}
           </div>
         </div>
-        {/* <Col lg={12}>
-          <ul className="timeline">
-            {timeline.map(({ content, header, imageContent, imageFileName, subheader }, ind) => (
-              <TimelineItem
-                invert={ind % 2 === 1}
-                key={header}
-                imageFileName={imageFileName}
-                header={header}
-                subheader={subheader}
-                content={content}
-                imageContent={
-                  imageContent ? (
-                    <div dangerouslySetInnerHTML={{ __html: `<h4>${nl2br(imageContent)}</h4>` }} />
-                  ) : null
-                }
-              />
-            ))}
-          </ul>
-        </Col> */}
       </Row>
     </PageSection>
   );

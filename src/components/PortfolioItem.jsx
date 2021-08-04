@@ -30,7 +30,7 @@ const PortfolioItem = ({
         <div className="portfolio-caption">
           <div className="caption-block">
           <h4>{header}</h4>
-          {subheader ? <p className="text-muted">{subheader}</p> : null}
+          {subheader ? <p>{subheader}</p> : null}
           </div>
           <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId={imageFileNameDetail} onClose={() => setOpen(false)} />
         <button type="button" aria-label={ariaLabel} className="text-uppercase btn btn-primary btn-l" onClick={()=> setOpen(true)}>{content}</button>
